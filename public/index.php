@@ -7,6 +7,11 @@
  * @author   Taylor Otwell <taylor@laravel.com>
  */
 
+if(DB::connection()->getDatabaseName())
+{
+   echo "Connected to database ".DB::connection()->getDatabaseName();
+}
+
 define('LARAVEL_START', microtime(true));
 
 /*
